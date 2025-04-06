@@ -46,7 +46,7 @@ export default function Footer() {
 
             {/* Footer text */}
             <Typography variant="body2">
-                Sishir Vallurupalli
+                Made by Sishir Vallurupalli
             </Typography>
         </Box>
     );
