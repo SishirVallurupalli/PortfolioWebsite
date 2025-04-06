@@ -34,9 +34,6 @@ export default function Footer() {
                             textTransform: 'none',
                             fontSize: '1rem',
                             fontFamily: "'Share Tech Mono', monospace",
-                            '&:hover': {
-                                textDecoration: 'underline',
-                            },
                         }}
                     >
                         {item}
