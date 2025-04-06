@@ -1,14 +1,21 @@
-import { Box, Typography } from '@mui/material';
-import * as React from 'react';
-import ExperienceBoxes from './ExperienceBoxes';
+import { Box, Typography } from "@mui/material";
+import * as React from "react";
+import ExperienceBox from "./ExperienceBox";
 
 export default function Experience() {
-    return <Box sx={{
-        padding: '50px', px: 4, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
-    }}>
-        <Typography variant='h2'>
-            Experience
-        </Typography>
-        <ExperienceBoxes />
+  return (
+    <Box
+      sx={{
+        padding: "50px",
+        px: 4,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Typography variant="h3">Experience</Typography>
+      <ExperienceBox />
     </Box>
+  );
 }

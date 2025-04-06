@@ -1,16 +1,21 @@
-import { Box, Typography } from '@mui/material';
-import * as React from 'react';
-import ContactBar from './ContactBar';
+import { Box, Typography } from "@mui/material";
+import * as React from "react";
+import ContactBar from "./ContactBar";
 
 export default function Contact() {
-    return (
-        <Box sx={{
-            padding: '50px', px: 4, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'
-        }}>
-            <Typography variant='h2'>
-                Contact
-            </Typography>
-            <ContactBar />
-        </Box>
-    )
+  return (
+    <Box
+      sx={{
+        padding: "50px",
+        px: 4,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Typography variant="h3">Contact</Typography>
+      <ContactBar />
+    </Box>
+  );
 }

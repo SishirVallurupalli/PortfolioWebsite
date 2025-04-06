@@ -40,7 +40,7 @@ const theme = createTheme({
     },
     MuiTypography: {
       styleOverrides: {
-        h2: {
+        h3: {
           position: "relative",
           display: "inline-block",
           marginBottom: "1.5rem",
