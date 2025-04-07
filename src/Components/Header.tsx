@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Box, Button, Typography } from "@mui/material";
+import { AppBar, Toolbar, Box, Button } from "@mui/material";
 import LaptopIcon from "@mui/icons-material/Laptop";
 
 export default function Header() {
@@ -7,8 +7,10 @@ export default function Header() {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: "rgb(35, 45, 63, 0.2)",
-        backdropFilter: "blur(8px)",
+        backgroundColor: "transparent",
+
+        boxShadow: "none",
+        borderBottom: "none",
         paddingX: 4,
       }}
     >
@@ -21,7 +23,7 @@ export default function Header() {
       >
         {/* Logo */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          <LaptopIcon />
+          {/* <LaptopIcon />
           <Typography
             sx={{
               fontSize: "1.5rem",
@@ -29,7 +31,7 @@ export default function Header() {
             }}
           >
             Sishir Vallurupalli
-          </Typography>
+          </Typography> */}
         </Box>
 
         {/* Navigation Links */}
@@ -46,9 +48,8 @@ export default function Header() {
           {headerButtons.map((item) => {
             return (
               <Button
-                color="inherit"
                 sx={{
-                  fontSize: "1.5rem",
+                  fontSize: "1rem",
                   textTransform: "none",
                   fontWeight: 500,
                 }}

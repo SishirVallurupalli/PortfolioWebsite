@@ -6,11 +6,11 @@ const theme = createTheme({
   },
   palette: {
     background: {
-      default: "#243642",
-      paper: "#243642",
+      default: "#08090a",
+      paper: "#222222",
     },
     text: {
-      primary: "#E2F1E7",
+      primary: "#ffffff",
     },
   },
   components: {
@@ -28,7 +28,7 @@ const theme = createTheme({
             bottom: -4,
             height: "4px",
             width: "0%",
-            backgroundColor: "#ffffff",
+            backgroundColor: "#1DCD9F",
             transition: "width 0.3s ease-in-out",
           },
           "&:hover::after": {
@@ -51,7 +51,29 @@ const theme = createTheme({
             marginTop: "30px",
             marginRight: "40px",
             marginLeft: "40px",
-            backgroundColor: "#ffffff",
+            backgroundColor: "#169976",
+          },
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          position: "relative",
+          textDecoration: "none",
+          color: "inherit",
+          "&::after": {
+            content: '""',
+            position: "absolute",
+            left: 0,
+            bottom: 0,
+            width: "0%",
+            height: "2px",
+            backgroundColor: "#1DCD9F", // 👈 custom underline color
+            transition: "width 0.3s ease-in-out",
+          },
+          "&:hover::after": {
+            width: "100%",
           },
         },
       },
