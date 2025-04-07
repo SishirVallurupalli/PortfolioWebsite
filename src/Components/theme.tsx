@@ -5,12 +5,16 @@ const theme = createTheme({
     fontFamily: "'Share Tech Mono', monospace",
   },
   palette: {
+    primary: {
+      main: "#1DCD9F",
+    },
     background: {
       default: "#08090a",
       paper: "#222222",
     },
     text: {
       primary: "#ffffff",
+      secondary: "#1DCD9F",
     },
   },
   components: {

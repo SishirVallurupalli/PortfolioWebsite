@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Box, Button } from "@mui/material";
+import { AppBar, Toolbar, Box, Button, Typography } from "@mui/material";
 import LaptopIcon from "@mui/icons-material/Laptop";
 
 export default function Header() {
@@ -42,18 +42,13 @@ export default function Header() {
             paddingY: 1,
             paddingX: 3,
             borderRadius: 1,
-            backgroundColor: "transparent",
+            backgroundColor: "rgba(34, 34, 34, 0.5)",
+            backdropFilter: "blur(8px)",
           }}
         >
           {headerButtons.map((item) => {
             return (
-              <Button
-                sx={{
-                  fontSize: "1rem",
-                  textTransform: "none",
-                  fontWeight: 500,
-                }}
-              >
+              <Button sx={{ color: "text.primary", fontSize: "1rem" }}>
                 {item}
               </Button>
             );
