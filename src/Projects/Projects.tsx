@@ -13,7 +13,7 @@ export default function Projects() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3">Projects</Typography>
+      <Typography variant="h4">Projects</Typography>
     </Box>
   );
 }

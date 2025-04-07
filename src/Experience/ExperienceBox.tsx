@@ -1,21 +1,40 @@
-import { Box } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import * as React from "react";
+import WellsFargoImage from "../assets/WellsFargoLogo.png";
 
 export default function ExperienceBox() {
   return (
     <Box
       sx={{
-        p: 3,
-        border: "1px solid #ddd",
-        borderRadius: "5px",
         width: "100%",
-        marginLeft: 2,
+
         marginTop: 2,
         maxWidth: 1000,
-        backgroundColor: "rgba(128, 128, 128, 0.1)",
+        backgroundColor: "rgb(35, 45, 63, 0.1)",
       }}
     >
-      Hello
+      <Paper
+        elevation={10}
+        sx={{
+          width: "100%",
+          height: "100%",
+          maxHeight: "30vh",
+          minHeight: "30vh",
+          overflow: "hidden", // prevents image from overflowing the border
+          borderRadius: 2, // adds the curved edges here (MUI spacing unit = 16px)
+        }}
+      >
+        <img
+          src={WellsFargoImage}
+          alt="WellsFargo"
+          style={{
+            height: "100%",
+            width: "26%",
+            objectFit: "fill",
+            display: "block",
+          }}
+        />
+      </Paper>
     </Box>
   );
 }

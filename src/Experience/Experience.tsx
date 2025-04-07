@@ -14,7 +14,7 @@ export default function Experience() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3">Experience</Typography>
+      <Typography variant="h4">Experience</Typography>
       <ExperienceBox />
     </Box>
   );

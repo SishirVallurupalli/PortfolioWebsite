@@ -14,7 +14,7 @@ export default function Contact() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3">Contact</Typography>
+      <Typography variant="h4">Contact</Typography>
       <ContactBar />
     </Box>
   );

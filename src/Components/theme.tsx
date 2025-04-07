@@ -5,13 +5,12 @@ const theme = createTheme({
     fontFamily: "'Share Tech Mono', monospace",
   },
   palette: {
-    mode: "dark",
     background: {
-      default: "#141416",
-      paper: "#141416",
+      default: "#243642",
+      paper: "#243642",
     },
     text: {
-      primary: "#ffffff",
+      primary: "#E2F1E7",
     },
   },
   components: {
@@ -40,7 +39,7 @@ const theme = createTheme({
     },
     MuiTypography: {
       styleOverrides: {
-        h3: {
+        h4: {
           position: "relative",
           display: "inline-block",
           marginBottom: "1.5rem",

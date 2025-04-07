@@ -1,4 +1,5 @@
 import { AppBar, Toolbar, Box, Button, Typography } from "@mui/material";
+import LaptopIcon from "@mui/icons-material/Laptop";
 
 export default function Header() {
   const headerButtons = ["Projects", "Experience", "Contact"];
@@ -6,7 +7,7 @@ export default function Header() {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: "transparent",
+        backgroundColor: "rgb(35, 45, 63, 0.2)",
         backdropFilter: "blur(8px)",
         paddingX: 4,
       }}
@@ -15,15 +16,15 @@ export default function Header() {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          py: 1.5,
           backgroundColor: "transparent",
         }}
       >
         {/* Logo */}
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <LaptopIcon />
           <Typography
             sx={{
-              fontSize: "2rem",
+              fontSize: "1.5rem",
               fontFamily: "Share Tech Mono', monospace",
             }}
           >
@@ -47,7 +48,7 @@ export default function Header() {
               <Button
                 color="inherit"
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: "1.5rem",
                   textTransform: "none",
                   fontWeight: 500,
                 }}
