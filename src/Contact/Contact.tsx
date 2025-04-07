@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import * as React from "react";
 import ContactBar from "./ContactBar";
 
 export default function Contact() {

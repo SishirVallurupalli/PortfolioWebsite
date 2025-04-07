@@ -1,6 +1,17 @@
-[{
+[
+  {
     "Company": "Wells Fargo",
     "Title": "Software Engineer",
     "Location": "Chandler, AZ",
-    "Info": "Lorem Ipsum" 
-}]
+    "Info": "At Wells Fargo, I contributed to the development of scalable internal applications that improved operational efficiency across several departments. I collaborated closely with cross-functional teams to implement secure, maintainable code and integrate third-party APIs. My time there sharpened my problem-solving skills and deepened my understanding of enterprise-level software practices.",
+    "Skills": [
+      "React",
+      "Node.js",
+      "JavaScript / TypeScript",
+      "REST APIs",
+      " Git & CI/CD",
+      "Agile / Scrum",
+      "HTML/CSS"
+    ]
+  }
+]

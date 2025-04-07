@@ -1,5 +1,4 @@
-import { AppBar, Toolbar, Box, Button, Typography } from "@mui/material";
-import LaptopIcon from "@mui/icons-material/Laptop";
+import { AppBar, Toolbar, Box, Button } from "@mui/material";
 
 export default function Header() {
   const headerButtons = ["Projects", "Experience", "Contact"];

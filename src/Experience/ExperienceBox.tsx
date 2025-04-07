@@ -1,5 +1,4 @@
 import { Box, Button, Chip, Grid, Paper, Typography } from "@mui/material";
-import * as React from "react";
 import WellsFargoImage from "../assets/WellsFargoLogo.png";
 
 export default function ExperienceBox() {
