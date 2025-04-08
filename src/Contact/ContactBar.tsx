@@ -26,7 +26,7 @@ export default function ContactBar() {
       <Typography>| |</Typography>
 
       <Link
-        href="https://linkedin.com/in/yourprofile"
+        href="https://www.linkedin.com/in/sishir-vallurupalli/"
         target="_blank"
         rel="noopener"
         color="inherit"
@@ -38,7 +38,7 @@ export default function ContactBar() {
       <Typography>| |</Typography>
 
       <Link
-        href="https://github.com/yourusername"
+        href="https://github.com/SishirVallurupalli"
         target="_blank"
         rel="noopener"
         color="inherit"

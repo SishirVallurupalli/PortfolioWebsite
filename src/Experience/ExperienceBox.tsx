@@ -1,7 +1,7 @@
 import { Box, Button, Chip, Grid, Paper, Typography } from "@mui/material";
 import WellsFargoImage from "../assets/WellsFargoLogo.png";
 
-export default function ExperienceBox() {
+export default function ExperienceBox({ experience }) {
   const skills = [
     "React",
     "Node.js",
@@ -15,7 +15,7 @@ export default function ExperienceBox() {
     <Box
       sx={{
         width: "100%",
-
+        minHeight: "25%",
         marginTop: 2,
         maxWidth: 1000,
         backgroundColor: "rgb(35, 45, 63, 0.1)",
@@ -36,7 +36,7 @@ export default function ExperienceBox() {
           <Grid size={9}>
             <Box sx={{ p: 2 }}>
               <Typography variant="body1" sx={{ fontSize: 16 }}>
-                Software Engineer
+                Software
               </Typography>
               <Typography
                 variant="subtitle2"
@@ -64,8 +64,6 @@ export default function ExperienceBox() {
                   );
                 })}
               </Box>
-
-              <Button sx={{ fontSize: 12, paddingTop: 1 }}>Learn More</Button>
             </Box>
           </Grid>
           <Grid size={3}>

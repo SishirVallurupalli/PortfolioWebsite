@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import ExperienceBox from "./ExperienceBox";
+// import experiences from "./experience";
 
 export default function Experience() {
   return (
@@ -14,7 +15,7 @@ export default function Experience() {
       }}
     >
       <Typography variant="h4">Experience</Typography>
-      <ExperienceBox />
+      <ExperienceBox experience={null} />
     </Box>
   );
 }

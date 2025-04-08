@@ -32,7 +32,7 @@ const theme = createTheme({
             bottom: -4,
             height: "4px",
             width: "0%",
-            backgroundColor: "#1DCD9F",
+            backgroundColor: "#169976",
             transition: "width 0.3s ease-in-out",
           },
           "&:hover::after": {
@@ -73,7 +73,7 @@ const theme = createTheme({
             bottom: 0,
             width: "0%",
             height: "2px",
-            backgroundColor: "#1DCD9F", // 👈 custom underline color
+            backgroundColor: "#169976", // 👈 custom underline color
             transition: "width 0.3s ease-in-out",
           },
           "&:hover::after": {
