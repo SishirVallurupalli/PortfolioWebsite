@@ -1,8 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import ExperienceBox from "./ExperienceBox";
-// import experiences from "./experience";
+import experienceData from "../data/experiences.json";
+import { ExperienceValue } from "../Components/types";
 
 export default function Experience() {
+  const experiences: ExperienceValue[] = experienceData;
   return (
     <Box
       sx={{
@@ -15,7 +17,9 @@ export default function Experience() {
       }}
     >
       <Typography variant="h4">Experience</Typography>
-      <ExperienceBox experience={null} />
+      {experiences.map((exp) => {
+        return <ExperienceBox experience={exp} />;
+      })}
     </Box>
   );
 }

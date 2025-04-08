@@ -1,16 +1,12 @@
-import { Box, Button, Chip, Grid, Paper, Typography } from "@mui/material";
+import { Box, Chip, Grid, Paper, Typography } from "@mui/material";
 import WellsFargoImage from "../assets/WellsFargoLogo.png";
+import { ExperienceValue } from "../Components/types";
 
-export default function ExperienceBox({ experience }) {
-  const skills = [
-    "React",
-    "Node.js",
-    "JavaScript / TypeScript",
-    "REST APIs",
-    " Git & CI/CD",
-    "Agile / Scrum",
-    "HTML/CSS",
-  ];
+export default function ExperienceBox({
+  experience,
+}: {
+  experience: ExperienceValue;
+}) {
   return (
     <Box
       sx={{
@@ -36,29 +32,23 @@ export default function ExperienceBox({ experience }) {
           <Grid size={9}>
             <Box sx={{ p: 2 }}>
               <Typography variant="body1" sx={{ fontSize: 16 }}>
-                Software
+                {experience.Title}
               </Typography>
               <Typography
                 variant="subtitle2"
                 color="text.secondary"
                 sx={{ fontSize: 12 }}
               >
-                Wells Fargo in Chandler, AZ
+                {experience.Company} in {experience.Location}
               </Typography>
               <Typography
                 variant="body2"
                 sx={{ paddingTop: 1, paddingBottom: 1, fontSize: 12 }}
               >
-                At Wells Fargo, I contributed to the development of scalable
-                internal applications that improved operational efficiency
-                across several departments. I collaborated closely with
-                cross-functional teams to implement secure, maintainable code
-                and integrate third-party APIs. My time there sharpened my
-                problem-solving skills and deepened my understanding of
-                enterprise-level software practices.
+                {experience.Info}
               </Typography>
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, pt: 1 }}>
-                {skills.map((element) => {
+                {experience.Skills.map((element: string) => {
                   return (
                     <Chip label={element} variant="outlined" color="primary" />
                   );
