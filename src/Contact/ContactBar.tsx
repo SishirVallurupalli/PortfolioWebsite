@@ -9,22 +9,20 @@ export default function ContactBar() {
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         flexWrap: "wrap",
-        justifyContent: "center",
+
         alignItems: "center",
         gap: 2,
         fontFamily: "'Share Tech Mono', monospace",
         py: 4,
-        paddingTop: "50px",
-        paddingBottom: "25px",
       }}
     >
       <Link
         href="mailto:sishir.vallurupalli@gmail.com"
         underline="none"
-        sx={{ fontSize: "1rem" }}
+        sx={{ fontSize: 15 }}
       >
         sishir.vallurupalli@gmail.com{" "}
-        <MailIcon sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }} />
+        <MailIcon sx={{ fontSize: 20, verticalAlign: "text-bottom" }} />
       </Link>
 
       <Typography display={{ xs: "none", md: "block" }}>| |</Typography>
@@ -34,12 +32,10 @@ export default function ContactBar() {
         target="_blank"
         rel="noopener"
         color="inherit"
-        sx={{ fontSize: "1rem" }}
+        sx={{ fontSize: 15 }}
       >
         LinkedIn{" "}
-        <OpenInNewIcon
-          sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }}
-        />
+        <OpenInNewIcon sx={{ fontSize: 20, verticalAlign: "text-bottom" }} />
       </Link>
 
       <Typography display={{ xs: "none", md: "block" }}>| |</Typography>
@@ -49,12 +45,10 @@ export default function ContactBar() {
         target="_blank"
         rel="noopener"
         color="inherit"
-        sx={{ fontSize: "1rem" }}
+        sx={{ fontSize: 15 }}
       >
         GitHub{" "}
-        <OpenInNewIcon
-          sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }}
-        />
+        <OpenInNewIcon sx={{ fontSize: 20, verticalAlign: "text-bottom" }} />
       </Link>
     </Box>
   );
