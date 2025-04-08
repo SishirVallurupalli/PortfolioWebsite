@@ -1,10 +1,13 @@
 import { Box, Link, Typography } from "@mui/material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import MailIcon from "@mui/icons-material/Mail";
 
 export default function ContactBar() {
   return (
     <Box
       sx={{
         display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
@@ -20,10 +23,11 @@ export default function ContactBar() {
         underline="none"
         sx={{ fontSize: "1rem" }}
       >
-        sishir.vallurupalli@gmail.com
+        sishir.vallurupalli@gmail.com{" "}
+        <MailIcon sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }} />
       </Link>
 
-      <Typography>| |</Typography>
+      <Typography display={{ xs: "none", md: "block" }}>| |</Typography>
 
       <Link
         href="https://www.linkedin.com/in/sishir-vallurupalli/"
@@ -32,10 +36,13 @@ export default function ContactBar() {
         color="inherit"
         sx={{ fontSize: "1rem" }}
       >
-        LinkedIn
+        LinkedIn{" "}
+        <OpenInNewIcon
+          sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }}
+        />
       </Link>
 
-      <Typography>| |</Typography>
+      <Typography display={{ xs: "none", md: "block" }}>| |</Typography>
 
       <Link
         href="https://github.com/SishirVallurupalli"
@@ -44,7 +51,10 @@ export default function ContactBar() {
         color="inherit"
         sx={{ fontSize: "1rem" }}
       >
-        GitHub
+        GitHub{" "}
+        <OpenInNewIcon
+          sx={{ fontSize: "1.5rem", verticalAlign: "text-bottom" }}
+        />
       </Link>
     </Box>
   );
