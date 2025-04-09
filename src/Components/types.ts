@@ -5,3 +5,10 @@ export interface ExperienceValue{
     Info: string;
     Skills: string[];
 }
+
+export interface ProjectsValue {
+    Name: string,
+    Info: string,
+    Tools: string[],
+    GithubLink: string,
+}

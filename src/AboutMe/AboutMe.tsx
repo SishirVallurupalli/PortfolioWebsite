@@ -12,7 +12,9 @@ export default function AboutMe() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3">Sishir Vallurupalli</Typography>
+      <Typography variant="h3" sx={{ textAlign: "center" }}>
+        Sishir Vallurupalli
+      </Typography>
     </Box>
   );
 }

@@ -8,6 +8,9 @@ const theme = createTheme({
     primary: {
       main: "#1DCD9F",
     },
+    secondary: {
+      main: "#169976",
+    },
     background: {
       default: "#08090a",
       paper: "#222222",
@@ -20,7 +23,7 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
-        root: {
+        text: {
           position: "relative",
           textTransform: "none",
           fontSize: "1rem",

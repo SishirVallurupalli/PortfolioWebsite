@@ -1,6 +1,10 @@
 import { Box, Typography } from "@mui/material";
+import ProjectBox from "./ProjectsBox";
+import projectsData from "../data/projects.json";
+import { ProjectsValue } from "../Components/types";
 
 export default function Projects() {
+  const projectsVal: ProjectsValue[] = projectsData;
   return (
     <Box
       sx={{
@@ -13,6 +17,9 @@ export default function Projects() {
       }}
     >
       <Typography variant="h4">Projects</Typography>
+      {projectsVal.map((project) => {
+        return <ProjectBox project={project} />;
+      })}
     </Box>
   );
 }

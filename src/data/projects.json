@@ -1,0 +1,16 @@
+[{
+    "Name": "Trading Bot",
+    "Info": "I developed a web application that allows users to track andvisualize their daily habits through interactive charts. The project features user authentication, responsive design, and persistent data storage using Firebase. It was built with React and Material UI, focusing on clean UX and mobile-first performance.",
+    "Tools": [
+    "React",
+    "Material UI (MUI)",
+    "Firebase",
+    "Responsive Design",
+    "JavaScript / TypeScript",
+    "Chart.js",
+    "User Authentication",
+    "State Management",
+    "Git / GitHub"
+  ],
+  "GithubLink": "https://github.com/SishirVallurupalli/TradingBot"
+}]
