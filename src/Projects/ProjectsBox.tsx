@@ -46,9 +46,15 @@ export default function ProjectBox({ project }: { project: ProjectsValue }) {
               })}
             </Box>
             <Box sx={{ padding: 2 }}>
-              <Button variant="contained" color="secondary">
-                Github{"  "}
-                <GitHubIcon sx={{ px: 1, verticalAlign: "text-bottom" }} />
+              <Button
+                variant="contained"
+                color="secondary"
+                component="a"
+                href={project.GithubLink}
+                target="_blank"
+                endIcon={<GitHubIcon />}
+              >
+                Github
               </Button>
             </Box>
           </Box>

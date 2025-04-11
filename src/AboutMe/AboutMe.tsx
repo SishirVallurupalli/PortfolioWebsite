@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import ConsoleBox from "./ConsoleBox";
 
 export default function AboutMe() {
   return (
@@ -12,9 +13,10 @@ export default function AboutMe() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3" sx={{ textAlign: "center" }}>
+      <Typography variant="h3" sx={{ textAlign: "center", paddingBottom: 4 }}>
         Sishir Vallurupalli
       </Typography>
+      <ConsoleBox />
     </Box>
   );
 }
