@@ -21,17 +21,7 @@ export default function Header() {
         }}
       >
         {/* Logo */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-          {/* <LaptopIcon />
-          <Typography
-            sx={{
-              fontSize: "1.5rem",
-              fontFamily: "Share Tech Mono', monospace",
-            }}
-          >
-            Sishir Vallurupalli
-          </Typography> */}
-        </Box>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}></Box>
 
         {/* Navigation Links */}
         <Box
@@ -47,7 +37,10 @@ export default function Header() {
         >
           {headerButtons.map((item) => {
             return (
-              <Button sx={{ color: "text.primary", fontSize: "1rem" }}>
+              <Button
+                key={item}
+                sx={{ color: "text.primary", fontSize: "1rem" }}
+              >
                 {item}
               </Button>
             );

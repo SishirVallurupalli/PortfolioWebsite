@@ -17,8 +17,10 @@ export default function Projects() {
       }}
     >
       <Typography variant="h4">Projects</Typography>
-      {projectsVal.map((project) => {
-        return <ProjectBox project={project} />;
+      {projectsVal.map((project, index) => {
+        return (
+          <ProjectBox key={`${index}-${project.Name}`} project={project} />
+        );
       })}
     </Box>
   );

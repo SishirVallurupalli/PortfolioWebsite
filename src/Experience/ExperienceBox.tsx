@@ -44,7 +44,12 @@ export default function ExperienceBox({
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, pt: 1 }}>
               {experience.Skills.map((element: string) => {
                 return (
-                  <Chip label={element} variant="outlined" color="primary" />
+                  <Chip
+                    key={element}
+                    label={element}
+                    variant="outlined"
+                    color="primary"
+                  />
                 );
               })}
             </Box>

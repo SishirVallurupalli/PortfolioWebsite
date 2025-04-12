@@ -18,7 +18,7 @@ export default function Experience() {
     >
       <Typography variant="h4">Experience</Typography>
       {experiences.map((exp) => {
-        return <ExperienceBox experience={exp} />;
+        return <ExperienceBox key={exp.Title} experience={exp} />;
       })}
     </Box>
   );

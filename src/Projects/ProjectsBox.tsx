@@ -3,7 +3,12 @@ import TradingBotImage from "../assets/tradingBot.png";
 import { ProjectsValue } from "../Components/types";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-export default function ProjectBox({ project }: { project: ProjectsValue }) {
+export default function ProjectBox({
+  project,
+}: {
+  project: ProjectsValue;
+  key: string;
+}) {
   return (
     <Paper
       elevation={24}
@@ -41,7 +46,12 @@ export default function ProjectBox({ project }: { project: ProjectsValue }) {
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, pt: 1 }}>
               {project.Tools.map((element: string) => {
                 return (
-                  <Chip label={element} variant="outlined" color="primary" />
+                  <Chip
+                    key={element}
+                    label={element}
+                    variant="outlined"
+                    color="primary"
+                  />
                 );
               })}
             </Box>

@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import ConsoleBox from "./ConsoleBox";
+import ConsoleBox from "./ConsoleBox/ConsoleBox";
 
 export default function AboutMe() {
   return (
