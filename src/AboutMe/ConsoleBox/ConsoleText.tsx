@@ -1,5 +1,5 @@
 import { Box, TextField, Typography } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function Text({ text }: { text: string }) {
   return (
