@@ -22,6 +22,7 @@ export default function ConsoleBox() {
         flexDirection: "row-reverse",
         alignItems: "center",
         minHeight: "50vh",
+        maxHeight: "50vh",
       }}
     >
       <Box
@@ -37,7 +38,7 @@ export default function ConsoleBox() {
         <Box
           sx={{
             width: 12,
-            height: 12,
+            minHeight: 12,
             borderRadius: "50%",
             backgroundColor: "#ff5f56",
           }}
@@ -45,7 +46,7 @@ export default function ConsoleBox() {
         <Box
           sx={{
             width: 12,
-            height: 12,
+            minHeight: 12,
             borderRadius: "50%",
             backgroundColor: "#ffbd2e",
           }}
@@ -53,7 +54,7 @@ export default function ConsoleBox() {
         <Box
           sx={{
             width: 12,
-            height: 12,
+            minHeight: 12,
             borderRadius: "50%",
             backgroundColor: "#27c93f",
           }}

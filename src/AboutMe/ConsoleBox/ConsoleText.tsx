@@ -1,5 +1,6 @@
 import { Box, TextField, Typography } from "@mui/material";
 import React, { useState } from "react";
+import { ExecuteCommand } from "./ConsoleFunction";
 
 function Text({ text }: { text: string }) {
   return (
@@ -43,21 +44,21 @@ const ConsoleInputControl = {
 
 export default function ConsoleText() {
   const [history, setHistory] = useState([
-    "> Welcome to Sishir's Terminal",
-    '> You can learn more about me by wrinting this command "./AboutMe"',
+    "$ Welcome to Sishir's Terminal",
+    '$ You can learn more about me by wrinting this command "./AboutMe"',
   ]);
   const [input, setInput] = useState("");
 
   const handleExecute = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key == "Enter" && input != "") {
-      const h = [...history, `$ Command ${input} not found`];
+      const h = [...history, `$ ${input}`, ...ExecuteCommand(input)];
       setHistory(h);
       setInput("");
     }
   };
 
   return (
-    <Box sx={{ px: 1 }}>
+    <Box sx={{ px: 1, overflowY: "scroll", flex: 1, maxHeight: "45vh" }}>
       {history.map((str: string, index) => {
         return <Text key={index} text={str} />;
       })}
