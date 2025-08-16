@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import AboutMeBox from "./AboutMeBox";
 
-export default function AboutMe() {
+const Title = () => {
   return (
     <Box
       sx={{
@@ -13,10 +12,12 @@ export default function AboutMe() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h4" sx={{ textAlign: "center", paddingBottom: 4 }}>
-        About Me
+      <Typography variant="h3" sx={{ textAlign: "center", paddingBottom: 4 }}>
+        Sishir Vallurupalli
       </Typography>
-      <AboutMeBox />
+      {/* <ConsoleBox /> */}
     </Box>
   );
-}
+};
+
+export default Title;

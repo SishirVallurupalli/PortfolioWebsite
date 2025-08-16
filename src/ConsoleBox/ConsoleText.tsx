@@ -1,6 +1,9 @@
 import { Box, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
-import { ExecuteCommand } from "./ConsoleFunction";
+import React, { useEffect, useState } from "react";
+import { ExecuteCommand, setDispatch } from "./ConsoleFunction";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../redux/store"; // Adjust the path to match your Redux store definition
+import { addHistory, addHistoryArray } from "../redux/historySlice";
 
 function Text({ text }: { text: string }) {
   return (
@@ -43,22 +46,37 @@ const ConsoleInputControl = {
 };
 
 export default function ConsoleText() {
-  const [history, setHistory] = useState([
-    "$ Welcome to Sishir's Terminal",
-    '$ You can learn more about me by wrinting this command "./AboutMe"',
-  ]);
+  const dispatch = useDispatch();
+  const history = useSelector((state: RootState) => state.history.history); // Ensure RootState is correctly typed in your store
   const [input, setInput] = useState("");
+
+  const scrollRef = React.useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setDispatch(dispatch);
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        top: scrollRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [history]);
 
   const handleExecute = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key == "Enter" && input != "") {
-      const h = [...history, `$ ${input}`, ...ExecuteCommand(input)];
-      setHistory(h);
+      dispatch(addHistory(`$ ${input}`));
+      dispatch(addHistoryArray(ExecuteCommand(input)));
       setInput("");
     }
   };
 
   return (
-    <Box sx={{ px: 1, overflowY: "scroll", flex: 1, maxHeight: "45vh" }}>
+    <Box
+      ref={scrollRef}
+      sx={{ px: 1, overflowY: "auto", flex: 1, maxHeight: "45vh", py: 0.5 }}
+    >
       {history.map((str: string, index) => {
         return <Text key={index} text={str} />;
       })}

@@ -8,10 +8,8 @@ export default function ConsoleBox() {
       sx={{
         border: "4px solid #444",
         borderRadius: 2,
-
         backgroundColor: "#1e1e1e",
         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.5)",
-
         mx: "auto",
         maxWidth: 1100,
         marginTop: 2,
@@ -41,6 +39,7 @@ export default function ConsoleBox() {
             minHeight: 12,
             borderRadius: "50%",
             backgroundColor: "#ff5f56",
+            cursor: "pointer",
           }}
         />
         <Box

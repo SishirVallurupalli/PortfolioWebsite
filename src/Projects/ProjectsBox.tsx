@@ -55,7 +55,7 @@ export default function ProjectBox({
                 );
               })}
             </Box>
-            <Box sx={{ padding: 2 }}>
+            <Box sx={{ paddingY: 2 }}>
               <Button
                 variant="contained"
                 color="secondary"
