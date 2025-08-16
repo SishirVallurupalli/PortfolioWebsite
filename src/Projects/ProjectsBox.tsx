@@ -25,7 +25,7 @@ export default function ProjectBox({
       }}
     >
       <Grid container>
-        <Grid size={{ xs: 12, md: 12, lg: 9 }}>
+        <Grid size={{ xs: 12, md: 12, lg: 12 }}>
           <Box sx={{ p: 2 }}>
             <Typography variant="body1" sx={{ fontSize: 16 }}>
               {project.Name}
@@ -69,7 +69,7 @@ export default function ProjectBox({
             </Box>
           </Box>
         </Grid>
-        <Grid size={{ xs: 0, md: 0, lg: 3 }}>
+        <Grid size={{ xs: 0, md: 0, lg: 0 }}>
           <img
             src={TradingBotImage}
             alt="TradingBot"

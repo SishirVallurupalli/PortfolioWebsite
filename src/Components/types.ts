@@ -14,5 +14,7 @@ export interface ProjectsValue {
 }
 
 export interface AboutMeValue {
+  Title: string;
+  link?: string;
   data: string;
 }

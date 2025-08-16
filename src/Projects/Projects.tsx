@@ -7,6 +7,7 @@ export default function Projects() {
   const projectsVal: ProjectsValue[] = projectsData;
   return (
     <Box
+      id="projects"
       sx={{
         padding: "50px",
         px: 4,

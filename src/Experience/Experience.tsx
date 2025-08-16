@@ -7,6 +7,7 @@ export default function Experience() {
   const experiences: ExperienceValue[] = experienceData;
   return (
     <Box
+      id="experience"
       sx={{
         padding: "50px",
         px: 4,

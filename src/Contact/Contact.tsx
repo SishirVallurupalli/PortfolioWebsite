@@ -4,6 +4,7 @@ import ContactBar from "./ContactBar";
 export default function Contact() {
   return (
     <Box
+      id="contact"
       sx={{
         padding: "50px",
         px: 4,

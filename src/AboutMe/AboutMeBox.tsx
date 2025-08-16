@@ -3,9 +3,12 @@ import { Box, Paper, Typography, Grid } from "@mui/material";
 import { AboutMeValue } from "../Components/types";
 import AboutMe from "../data/AboutMe.json";
 import ProfilePicture from "../assets/ProfilePicture.png";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 export default function AboutMeBox() {
-  const aboutMeData: AboutMeValue = AboutMe;
+  const summary =
+    "I am iOS Developer with Wells Fargo, based in Phoenix, AZ. I have a passion for building high-quality mobile applications and a strong background in Swift and Objective-C. I am always eager to learn new technologies and improve my skills.";
+  const aboutMeData: AboutMeValue[] = AboutMe;
   return (
     <Paper
       elevation={24}
@@ -25,11 +28,53 @@ export default function AboutMeBox() {
       <Grid container>
         <Grid size={{ xs: 12, md: 12, lg: 9 }}>
           <Box sx={{ p: 2 }}>
-            <Typography variant="body1" sx={{ fontSize: 18 }}>
-              {aboutMeData.data}
+            <Typography variant="body1" sx={{ fontSize: 16 }}>
+              {summary}
             </Typography>
-            <Box sx={{ paddingY: 2 }}></Box>
+            {aboutMeData.map((item, index) => (
+              <Box
+                key={index}
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  gap: 1, // space between Title and Data
+                  paddingY: 1,
+                }}
+              >
+                <Typography
+                  variant="body1"
+                  color="text.secondary"
+                  sx={{ fontSize: 16 }}
+                >
+                  [{item.Title}]
+                </Typography>
+                {item.link ? (
+                  <Typography
+                    variant="body1"
+                    sx={{ fontSize: 16, color: "text.primary" }}
+                    component="a"
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="primary"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    {item.data}
+                    {""}
+                    <OpenInNewIcon
+                      sx={{ fontSize: 20, verticalAlign: "text-bottom" }}
+                    />
+                  </Typography>
+                ) : (
+                  <Typography variant="body1" sx={{ fontSize: 16 }}>
+                    {item.data}
+                  </Typography>
+                )}
+              </Box>
+            ))}
           </Box>
+
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, pt: 1 }}></Box>
         </Grid>
         <Grid size={{ xs: 0, md: 0, lg: 3 }}>

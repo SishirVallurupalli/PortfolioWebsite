@@ -1,7 +1,8 @@
 import { AppBar, Toolbar, Box, Button } from "@mui/material";
+import { navItems, handleScroll } from "./navUtilities";
 
 export default function Header() {
-  const headerButtons = ["Projects", "Experience", "Contact"];
+  const headerButtons = navItems;
   return (
     <AppBar
       position="fixed"
@@ -38,10 +39,11 @@ export default function Header() {
           {headerButtons.map((item) => {
             return (
               <Button
-                key={item}
+                key={item.id}
                 sx={{ color: "text.primary", fontSize: "1rem" }}
+                onClick={() => handleScroll(item.id)}
               >
-                {item}
+                {item.label}
               </Button>
             );
           })}

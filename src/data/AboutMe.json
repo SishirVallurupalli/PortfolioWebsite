@@ -1,25 +1,33 @@
-{
-    "data" : "I am iOS Developer with Wells Fargo, based in Phoenix, AZ. I have a passion for building high-quality mobile applications and a strong background in Swift and Objective-C. I am always eager to learn new technologies and improve my skills.",
-    "chips": [{
-            "data": "Phoenix, AZ"
-        },
-        {
-            "data": "sishir.vallurupalli@gmail.com",
-            "link": "mailto:sishir.vallurupalli@gmail.com"
-        },
-        {
-            "data": "LinkedIn",
-            "link": "https://www.linkedin.com/in/sishir-vallurupalli"
-        },
-        {
-            "data": "GitHub",
-            "link": "github.com/sishirvallurupalli"
-        },
-        {
-            "data": "Resume"
-        },
-        {
-            "data": ""
-        }
-    ]
-}
+[
+    {
+        "Title": "Location",
+        "data": "Phoenix, AZ"
+    },
+    {
+        "Title": "Contact",
+        "data": "sishir.vallurupalli@gmail.com",
+        "link": "mailto:sishir.vallurupalli@gmail.com"
+    },
+    {
+        "Title": "Social Media",
+        "data": "LinkedIn",
+        "link": "https://www.linkedin.com/in/sishir-vallurupalli"
+    },
+    {
+        "Title": "Social Media",
+        "data": "GitHub",
+        "link": "github.com/sishirvallurupalli"
+    },
+    {
+        "Title": "Resume",
+        "data": "Resume"
+    },
+    {
+        "Title": "Education",
+        "data": "B.S. Computer Science - Arizona State University"
+    },
+    {
+        "Title": "Skills",
+        "data": "[SwiftUI, UIKit, React, Spring Boot, Firebase]"
+    }
+]

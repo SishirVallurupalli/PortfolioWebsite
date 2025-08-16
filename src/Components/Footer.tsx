@@ -1,7 +1,5 @@
 import { Box, Typography, Button } from "@mui/material";
-
-const navItems = ["Projects", "Experience", "Contact"];
-
+import { navItems, handleScroll } from "./navUtilities";
 export default function Footer() {
   return (
     <Box
@@ -27,7 +25,10 @@ export default function Footer() {
       >
         {navItems.map((item) => (
           <Button
-            key={item}
+            key={item.id}
+            onClick={() => {
+              handleScroll(item.id);
+            }}
             sx={{
               color: "white",
               textTransform: "none",
@@ -35,7 +36,7 @@ export default function Footer() {
               fontFamily: "'Share Tech Mono', monospace",
             }}
           >
-            {item}
+            {item.label}
           </Button>
         ))}
       </Box>

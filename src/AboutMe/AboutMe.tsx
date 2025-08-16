@@ -4,6 +4,7 @@ import AboutMeBox from "./AboutMeBox";
 export default function AboutMe() {
   return (
     <Box
+      id="about-me"
       sx={{
         padding: "50px",
         px: 4,
