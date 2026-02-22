@@ -11,20 +11,16 @@ export default function Header() {
 
         boxShadow: "none",
         borderBottom: "none",
-        paddingX: 4,
+        display: { xs: "none", sm: "flex" },
       }}
     >
       <Toolbar
         sx={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center",
           backgroundColor: "transparent",
         }}
       >
-        {/* Logo */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}></Box>
-
-        {/* Navigation Links */}
         <Box
           sx={{
             display: "flex",

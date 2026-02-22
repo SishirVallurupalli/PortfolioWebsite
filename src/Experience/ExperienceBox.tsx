@@ -31,9 +31,16 @@ export default function ExperienceBox({
             <Typography
               variant="subtitle2"
               color="text.secondary"
-              sx={{ fontSize: 14 }}
+              sx={{ fontSize: 12 }}
             >
               {experience.Company} in {experience.Location}
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              color="text.secondary"
+              sx={{ fontSize: 12 }}
+            >
+              {experience.From} to {experience.To}
             </Typography>
             <Typography
               variant="body2"

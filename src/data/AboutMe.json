@@ -5,7 +5,7 @@
     },
     {
         "Title": "Contact",
-        "data": "sishir.vallurupalli@gmail.com",
+        "data": "Email",
         "link": "mailto:sishir.vallurupalli@gmail.com"
     },
     {
@@ -16,11 +16,12 @@
     {
         "Title": "Social Media",
         "data": "GitHub",
-        "link": "github.com/sishirvallurupalli"
+        "link": "https://github.com/SishirVallurupalli"
     },
     {
         "Title": "Resume",
-        "data": "Resume"
+        "data": "Resume",
+        "link": "https://drive.google.com/file/d/14XNEEr_A12VTVaPdAS9cSWZQDeCdVPQR/view?usp=sharing"
     },
     {
         "Title": "Education",

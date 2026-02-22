@@ -1,4 +1,4 @@
-import { Box, Paper, Typography, Grid } from "@mui/material";
+import { Box, Paper, Typography, Grid, Link } from "@mui/material";
 
 import { AboutMeValue } from "../Components/types";
 import AboutMe from "../data/AboutMe.json";
@@ -7,14 +7,13 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 export default function AboutMeBox() {
   const summary =
-    "I am iOS Developer with Wells Fargo, based in Phoenix, AZ. I have a passion for building high-quality mobile applications and a strong background in Swift and Objective-C. I am always eager to learn new technologies and improve my skills.";
+    "I am iOS Developer with Wells Fargo, based in Phoenix, AZ. I have a passion for building high-quality user interactive applications and a strong background in frontend development. I am always eager to learn new technologies and improve my skills.";
   const aboutMeData: AboutMeValue[] = AboutMe;
   return (
     <Paper
       elevation={24}
       sx={{
         maxWidth: 1100,
-        maxHeight: 500,
         marginTop: 2,
         marginBottom: 2,
         width: "100%",
@@ -50,22 +49,21 @@ export default function AboutMeBox() {
                   [{item.Title}]
                 </Typography>
                 {item.link ? (
-                  <Typography
+                  <Link
                     variant="body1"
                     sx={{ fontSize: 16, color: "text.primary" }}
                     component="a"
                     href={item.link}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    color="primary"
-                    style={{ textDecoration: "underline" }}
+                    rel="noopener"
+                    color="inherit"
                   >
                     {item.data}
                     {""}
                     <OpenInNewIcon
                       sx={{ fontSize: 20, verticalAlign: "text-bottom" }}
                     />
-                  </Typography>
+                  </Link>
                 ) : (
                   <Typography variant="body1" sx={{ fontSize: 16 }}>
                     {item.data}

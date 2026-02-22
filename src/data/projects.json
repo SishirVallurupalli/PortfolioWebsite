@@ -1,16 +1,54 @@
-[{
-    "Name": "Trading Bot",
-    "Info": "I developed a web application that allows users to track andvisualize their daily habits through interactive charts. The project features user authentication, responsive design, and persistent data storage using Firebase. It was built with React and Material UI, focusing on clean UX and mobile-first performance.",
+[
+  {
+    "Name": "Automated Counting Software",
+    "Info": "I helped develop an automated counting software that uses computer vision to count objects in images. I implemented the frontend and created a user-friendly interface for uploading videos, counting results, and downloading reports. In addition, I integrated a CI/CD pipeline using AWS Amplify for seamless deployment and updates.",
     "Tools": [
-    "React",
-    "Material UI (MUI)",
-    "Firebase",
-    "Responsive Design",
-    "JavaScript / TypeScript",
-    "Chart.js",
-    "User Authentication",
-    "State Management",
-    "Git / GitHub"
-  ],
-  "GithubLink": "https://github.com/SishirVallurupalli/TradingBot"
-}]
+      "React",
+      "Redux",
+      "JavaScript",
+      "AWS S3",
+      "Lambda",
+      "AWS Amplify",
+      "OpenCV",
+      "Python"
+    ],
+    "GithubLink": "https://github.com/automated-street-environment-detection/automatedCountingFrontend"
+  },
+  {
+    "Name": "News Sentiment Analysis",
+    "Info": "I developed a sentiment analysis tool that processes news articles using Python and Natural Language Processing (NLP) techniques. The tool fetches articles from various sources, analyzes sentiment to find trends.",
+    "Tools": [
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "NewsAPI",
+      "Natural Language Processing"
+    ],
+    "GithubLink": "https://github.com/SishirVallurupalli/NewsSentimentAnalysis"
+  },
+  {
+    "Name": "Trading Bot",
+    "Info": "I built a trading bot that runs on Google Cloud Functions with a scheduler that triggers execution once every hour. The bot fetches real-time market data from the Alpaca API, processes trading logic, and automates buy/sell decisions without manual intervention. This serverless setup ensures scalability, low maintenance, and reliable execution of trades on schedule.",
+    "Tools": [
+      "Firebase",
+      "Google Cloud Functions",
+      "Alpaca API",
+      "Python",
+      "Pandas",
+      "NumPy"
+    ],
+    "GithubLink": "https://github.com/SishirVallurupalli/TradingBot"
+  },
+  {
+    "Name": "Racing Game",
+    "Info": "I developed a 3D racing game using Unity and C#. The game features realistic physics simulation, AI pathfinding for opponents, and a progression system that enhances gameplay.",
+    "Tools": [
+      "Unity",
+      "C#",
+      "Game Development",
+      "Physics Simulation",
+      "AI Pathfinding"
+    ],
+    "GithubLink": "https://github.com/SishirVallurupalli/Racing-Game"
+  }
+]

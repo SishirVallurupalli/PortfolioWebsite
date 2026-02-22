@@ -1,30 +1,50 @@
 [
   {
     "Company": "Wells Fargo",
-    "Title": "App Engineer",
+    "Title": "iOS Software Engineer – Mobile App Development & Automation",
     "Location": "Chandler, AZ",
-    "Info": "At Wells Fargo, I contributed to the development of scalable internal applications that improved operational efficiency across several departments. I collaborated closely with cross-functional teams to implement secure, maintainable code and integrate third-party APIs. My time there sharpened my problem-solving skills and deepened my understanding of enterprise-level software practices.",
+    "From": "Febuary 2025",
+    "To": "Present",
+    "Info": "As an iOS Software Engineer at Wells Fargo, I streamlined end-to-end testing by integrating BrowserStack with Appium, cutting cross-device testing time by 40% and improving app reliability. I built reusable SDK components, developed user-facing features with SwiftUI and UIKit that boosted App Store ratings by 15%, and automated regression test cases to reduce production issues. Additionally, I contributed to evolving the app’s architecture with MVVM and Coordinator patterns, improving scalability, testability, and rollout speed, while effectively communicating technical decisions with stakeholders.",
     "Skills": [
-      "React",
-      "Node.js",
-      "JavaScript / TypeScript",
-      "REST APIs",
-      " Git & CI/CD",
-      "Agile / Scrum",
-      "HTML/CSS"
+      "Swift",
+      "Objective-C",
+      "SwiftUI",
+      "UIKit",
+      "Appium",
+      "BrowserStack",
+      "Xcode"
     ]
   },
   {
     "Company": "Wells Fargo",
-    "Title": "Backend",
+    "Title": "Backend Software Engineering Intern ",
     "Location": "Chandler, AZ",
-    "Info": "At Wells Fargo, I contributed to the development of scalable internal applications that improved operational efficiency across several departments. I collaborated closely with cross-functional teams to implement secure, maintainable code and integrate third-party APIs. My time there sharpened my problem-solving skills and deepened my understanding of enterprise-level software practices.",
+    "From": "May 2024",
+    "To": "August 2024",
+    "Info": "During my backend software engineering internship, I configured Splunk dashboards to monitor microservice health, reducing issue detection time by 30%. I enhanced session management and personalization by integrating mid-tier cookies in a Spring Boot application, which improved user security and overall experience. I also collaborated closely within an agile team, contributing to sprint planning, stand-ups, and retrospectives to drive project delivery.",
+    "Skills": [
+      "Splunk",
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "Git & CI/CD",
+      "Agile / Scrum"
+    ]
+  },
+  {
+    "Company": "Wells Fargo",
+    "Title": "Frontend Software Engineering Intern",
+    "Location": "Chandler, AZ",
+    "From": "May 2023",
+    "To": "August 2023",
+    "Info": "As a frontend intern, I developed a Python script to aggregate performance data from multiple Jira boards and Tableau charts, generating insights across 100+ Scrum teams. I also created a comprehensive testing solution for commercial banking websites that improved the performance of MicroFrontends (MFEs) and increased click rates by 20%. My work was presented to senior leadership, including the Vice President of Product and Technology Executive, earning recognition for its innovation and business impact.",
     "Skills": [
       "React",
       "Node.js",
       "JavaScript / TypeScript",
+      "MicroFrontends",
       "REST APIs",
- 
       "HTML/CSS"
     ]
   }

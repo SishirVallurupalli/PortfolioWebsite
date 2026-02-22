@@ -1,5 +1,7 @@
 export interface ExperienceValue {
   Title: string;
+  From: string;
+  To: string;
   Company: string;
   Location: string;
   Info: string;
