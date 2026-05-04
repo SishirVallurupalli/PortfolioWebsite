@@ -1,5 +1,19 @@
 [
   {
+    "Name": "Credit Risk Form",
+    "Info": "I built a full-stack credit risk prediction application that allows users to input financial and personal information and receive real-time probability estimates of default. The frontend was developed using React and Material-UI (MUI) to create a clean, responsive, and user-friendly interface, while the backend was implemented with Flask to handle API requests and serve model predictions. I trained and evaluated machine learning models using Scikit-learn on a real-world Kaggle dataset, applying data preprocessing and classification techniques to generate accurate risk assessments.",
+    "Tools": [
+      "React",
+      "JavaScript",
+      "SciK",
+      "Flask",
+      "Scikit-learn",
+      "Kaggle (dataset source)",
+      "Python"
+    ],
+    "GithubLink": "https://github.com/SishirVallurupalli/CreditRisk"
+  },
+  {
     "Name": "Automated Counting Software",
     "Info": "I helped develop an automated counting software that uses computer vision to count objects in images. I implemented the frontend and created a user-friendly interface for uploading videos, counting results, and downloading reports. In addition, I integrated a CI/CD pipeline using AWS Amplify for seamless deployment and updates.",
     "Tools": [
